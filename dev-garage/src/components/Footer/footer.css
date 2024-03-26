@@ -1,0 +1,30 @@
+/* Footer
+-----------------------------*/
+
+footer {
+    background-color: var(--tertiary-color);
+}
+
+footer table {
+    margin-top: 10px;
+    list-style: none;
+    color: var(--secundary-color);
+    border: 4px solid var(--primary-color);
+    text-align: center;
+    font-weight: bold;
+    width: 150px;
+}
+
+footer span {
+    display: flex;
+    justify-content: center;
+    color: var(--secundary-color);
+}
+
+footer label {
+    color: var(--secundary-color);
+}
+
+.justify-content-space-around {
+    justify-content: space-around;
+}
