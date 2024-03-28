@@ -6,7 +6,7 @@ import './footer.css'
 import '../../assets/style.css';
 
 /* Importing images */
-import logo from '../../assets/imgs/LOGO-removebg.png'
+// import logo from '../../assets/imgs/LOGO-removebg.png'
 
 function Footer() {
     return(
@@ -14,7 +14,7 @@ function Footer() {
             <footer>
                 <div className="container">
                     <div className="d-flex justify-content-space-around">
-                        <img src={logo} width="200" height="200" alt="Logo"></img>
+                        {/* <img src={logo} width="200" height="200" alt="Logo"></img> */}
                         <div>
                             <table>
                                 <tr>

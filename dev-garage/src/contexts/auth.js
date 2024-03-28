@@ -24,9 +24,7 @@ function AuthProvider({ children }){
         setLoading(false);
       }
 
-
       setLoading(false);
-
     }
 
     loadUser();
@@ -45,16 +43,14 @@ function AuthProvider({ children }){
 
       let data = {
         uid: uid,
-        nome: docSnap.data().nome,
-        email: value.user.email,
-        avatarUrl: docSnap.data().avatarUrl
+        email: value.user.email
       }
 
       setUser(data);
       storageUser(data);
       setLoadingAuth(false);
       toast.success("Bem-vindo(a) de volta!")
-      navigate("/dashboard")
+      navigate("/home")
     })
     .catch((error) => {
       console.log(error);
