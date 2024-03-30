@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import {Link} from 'react-router-dom';
 
 /* Styles and Bootstrap */
@@ -9,16 +9,12 @@ import './header.css';
 import '../../assets/style.css';
 
 import {AuthContext} from '../../contexts/auth'
-/* FontAwesome */
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 /* Importing images */
 import logoImage from '../../assets/imgs/logoSvg.svg'
 
 function Header() {
-    const { user, storageUser, setUser, logout } = useContext(AuthContext);
-
+    const { logout } = useContext(AuthContext);
 
     return(
         <header className="headerFull">

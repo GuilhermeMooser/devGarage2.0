@@ -6,40 +6,40 @@ import './footer.css'
 import '../../assets/style.css';
 
 /* Importing images */
-// import logo from '../../assets/imgs/LOGO-removebg.png'
+import logo from '../../assets/imgs/logoSvg.svg'
 
 function Footer() {
     return(
         <>
-            <footer>
+            <footer className='footerFull'>
                 <div className="container">
                     <div className="d-flex justify-content-space-around">
-                        {/* <img src={logo} width="200" height="200" alt="Logo"></img> */}
+                        <img src={logo} width="200" height="200" alt="Logo"></img>
                         <div>
                             <table>
                                 <tr>
                                     <td>
-                                        <Link to="/">FAQ</Link>
+                                        <Link to="/home">FAQ</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <Link to="/">Suporte</Link>
+                                        <Link to="/home">Suporte</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <Link to="/">Sobre nós</Link>
+                                        <Link to="/home">Sobre nós</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <Link to="/">Políticas</Link>
+                                        <Link to="/home">Políticas</Link>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <Link to="/">Termos de uso</Link>
+                                        <Link to="/home">Termos de uso</Link>
                                     </td>
                                 </tr>
                             </table>
@@ -54,7 +54,7 @@ function Footer() {
                             </form>
                         </div>
                     </div>
-                    <span className="pb-4">&copy; Copyright 2000-2023 Todos os direitos reservados</span>
+                    <span className="pb-4">&copy; Copyright 2000-2024 Todos os direitos reservados</span>
                 </div>
             </footer>
         </>
