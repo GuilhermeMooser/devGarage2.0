@@ -1,51 +1,54 @@
+import { useContext, useState } from 'react'
 import {Link} from 'react-router-dom';
 
 /* Styles and Bootstrap */
 import 'bootstrap/dist/css/bootstrap.min.css';
+// @ts-ignore
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './header.css';
 import '../../assets/style.css';
 
+import {AuthContext} from '../../contexts/auth'
 /* FontAwesome */
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 /* Importing images */
-import logoImage from '../../assets/imgs/LOGO-removebg.png'
+import logoImage from '../../assets/imgs/logoSvg.svg'
 
 function Header() {
+    const { user, storageUser, setUser, logout } = useContext(AuthContext);
+
+
     return(
-        <header>
+        <header className="headerFull">
                 <nav className="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
                     <div className="container">
-                        <Link to="/" className="navbar-brand">
-                            <img src={logoImage} width="200" alt="Logo"></img>
+                        <Link to="/home" className="navbar-brand">
+                            <img src={logoImage} width="200" height="140" alt="Logo"></img>
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal" aria-controls="nav-principal" aria-expanded="false" aria-label="Menu com os links principais">
-                            <FontAwesomeIcon icon={faBars}/>
+                            <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="nav-principal">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link">Home</Link>
+                                    <Link to="/home" className="nav-link">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link">Loja</Link>
+                                    <Link to="/home" className="nav-link">Loja</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link">Classificados</Link>
+                                    <Link to="/classificados" className="nav-link">Classificados</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/relatorios" className="nav-link">Relatórios</Link>
+                                    <Link to="/comunidade" className="nav-link">Comunidade</Link>
                                 </li>
 
                                 <li className="nav-item divider"></li>
 
                                 <li className="nav-item">
-                                    <Link to="/" className="nav-link">Cadastrar</Link>
-                                </li>
-                                <li className="nav-item">
-                                    <Link to="/" className="nav-link">Entrar</Link>
+                                    <Link className="nav-link" onClick={ () => logout() }>Sair</Link>
                                 </li>
                             </ul>
                         </div>

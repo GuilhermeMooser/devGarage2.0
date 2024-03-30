@@ -1,43 +1,42 @@
+
 /* Header
------------------------------*/
-header {
-    background-color: var(--tertiary-color);
-    height: 200px;
-}
+	-----------------------------*/
+.headerFull {
+	header {
+		background-color: var(--tertiary-color);
+		height: 200px;
+	}
 
-/* Barra de navegação
------------------------------*/
+	/* Barra de navegação
+	-----------------------------*/
 
-nav.navbar-transparente {
-	padding: 15px 0px;
-	background: rgba(0,0,0,0.6);
-}
+	nav.navbar-transparente {
+		padding: 15px 0px;
+		background: rgba(0,0,0);
+	}
 
-.navbar-light .navbar-nav .nav-link {
-	color: var(--secundary-color);
-}
+	.navbar-light .navbar-nav .nav-link {
+		color: var(--secundary-color);
+	}
 
-.navbar-light .navbar-nav .nav-link:hover {
-	color: var(--purpleHover);
-}
+	.navbar-light .navbar-nav .nav-link:hover {
+		color: var(--purpleHover);
+	}
 
-.navbar-light .navbar-toggler {
-    color: rgba(255,255,255,.5);
-    border-color: rgba(255,255,255,0.5);
-}
+	.navbar-light .navbar-toggler {
+		color: rgba(255,255,255,.5);
+		border-color: rgba(255,255,255,0.5);
+	}
 
-.divider {
-	width: 1px;
-	background: var(--secundary-color);
-	margin: 12px 15px;
-}
+	.divider {
+		width: 1px;
+		background: var(--secundary-color);
+		margin: 12px 15px;
+	}
 
-.height20 {
-	height: 20% !important;
-}
-
-/* Correção Bootstrap
------------------------------*/
-.ml-auto {
-    margin-left: auto !important;
+	/* Correção Bootstrap
+	-----------------------------*/
+	.ml-auto {
+		margin-left: auto !important;
+	}
 }
