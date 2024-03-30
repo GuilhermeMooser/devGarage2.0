@@ -16,33 +16,26 @@ function Footer() {
                     <div className="d-flex justify-content-space-around">
                         <img src={logo} width="200" height="200" alt="Logo"></img>
                         <div>
-                            <table>
+                        <table>
+                            <tbody>
                                 <tr>
-                                    <td>
-                                        <Link to="/home">FAQ</Link>
-                                    </td>
+                                    <td><Link to="/home">FAQ</Link></td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <Link to="/home">Suporte</Link>
-                                    </td>
+                                    <td><Link to="/home">Suporte</Link></td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <Link to="/home">Sobre nós</Link>
-                                    </td>
+                                    <td><Link to="/home">Sobre nós</Link></td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <Link to="/home">Políticas</Link>
-                                    </td>
+                                    <td><Link to="/home">Políticas</Link></td>
                                 </tr>
                                 <tr>
-                                    <td>
-                                        <Link to="/home">Termos de uso</Link>
-                                    </td>
+                                    <td><Link to="/home">Termos de uso</Link></td>
                                 </tr>
-                            </table>
+                            </tbody>
+                        </table>
+
                             <form action="">
                                 <div className="mt-3">
                                     <label htmlFor="email">Me mantenha avisado</label><br></br>

@@ -19,7 +19,7 @@ export default function Home() {
     return (
         <>
             <Header/>
-                <div className=' firstSection'>
+                <div className='firstSection'>
                     {/* Sections */}
                     {/* Menu */}
                     <section className="fullAlignFlex espacoTopo">
@@ -95,7 +95,7 @@ export default function Home() {
                                 </div>  
                             </div>
                         </section>
-                        <section className="d-flex espaço10rem espacoTopo fullAlignFlex" id="comunidade">
+                        <section className="d-flex espacoTopo fullAlignFlex" id="comunidade">
                             <div className="container align-self-center">
                                 <h1>Comunidade</h1>
 

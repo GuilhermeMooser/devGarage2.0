@@ -2,10 +2,11 @@
 /* Header
 	-----------------------------*/
 .headerFull {
-	header {
+	/* header {
 		background-color: var(--tertiary-color);
 		height: 200px;
-	}
+	} */
+	height: 111px;
 
 	/* Barra de navegação
 	-----------------------------*/

@@ -1,6 +1,6 @@
 .firstSection {
     position: relative;
-    top: calc(120px + 1em);
+    top: 1em;
 }
 
 /* Home
@@ -97,10 +97,6 @@ button.btn.btnSectionTopo:hover {
 
 .alinhaLeft {
     margin-left: -20px !important;
-}
-
-.espaço10rem {
-    margin-bottom: 10rem;
 }
 
 /* Medias Queries
