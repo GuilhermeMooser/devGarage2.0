@@ -1,8 +1,8 @@
 /* Footer
 -----------------------------*/
 .footerFull {
+    position: relative;
     background-color: var(--tertiary-color);
-    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;

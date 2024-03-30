@@ -54,6 +54,7 @@
       padding: 10px;
       font-size: 15px;
       background-color: #FFF;
+      box-sizing: content-box;
     }
   
     form button{

@@ -21,7 +21,7 @@ function Header() {
                 <nav className="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
                     <div className="container">
                         <Link to="/home" className="navbar-brand">
-                            <img src={logoImage} width="200" height="140" alt="Logo"></img>
+                            <img src={logoImage} width="200" height="100" alt="Logo"></img>
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-principal" aria-controls="nav-principal" aria-expanded="false" aria-label="Menu com os links principais">
                             <span className="navbar-toggler-icon"></span>
