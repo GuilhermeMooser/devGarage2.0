@@ -34,7 +34,7 @@ export default function Garagem() {
     const handleItemClick = (item) => {
         setSelectedItem(item);
         setModalOpen(true);
-      };
+    };
     
     const addItemToList = (newItem) => {
         setData([...data, newItem]);

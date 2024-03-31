@@ -42,7 +42,7 @@ export default function Home() {
                                 </div>
                                 <div className="col-12 col-sm-6 col-md-3">
                                     <button className="btn btnSectionTopo">
-                                    <Link to="/home">CLASSIFICADOS</Link>
+                                        <Link to="/home">CLASSIFICADOS</Link>
                                     </button>
                                 </div>
                             </div>
