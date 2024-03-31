@@ -55,13 +55,13 @@ export default function Garagem() {
                             <h1>Garagem</h1>
 
                             <div className="d-flex mt-5 flex-wrap justify-content-center gap-2">
-                            {data.map(item => (
-                                <div key={item.id} onClick={() => handleItemClick(item)} className='col-md-12 col-lg-6 col-xl-4 estilizaImg' style={{ cursor: 'pointer' }}>
-                                        <h3><strong>{item.name}</strong></h3>
-                                        <img src={item.image} alt={item.name} style={{ maxWidth: '350px', height: '260px' }} className="imgEspecifico"/>
-                                        <p><strong>{item.author}</strong></p>
-                                </div>
-                            ))} 
+                                {data.map(item => (
+                                    <div key={item.id} onClick={() => handleItemClick(item)} className='col-md-12 col-lg-6 col-xl-4 estilizaImg' style={{ cursor: 'pointer' }}>
+                                            <h3><strong>{item.name}</strong></h3>
+                                            <img src={item.image} alt={item.name} style={{ maxWidth: '350px', height: '260px' }} className="imgEspecifico"/>
+                                            <p><strong>{item.author}</strong></p>
+                                    </div>
+                                ))} 
                             </div>
                             <hr className="divisorAdicaoGaragem mb-5"></hr>
                             <AdicaoGaragem addItemToList={addItemToList} />

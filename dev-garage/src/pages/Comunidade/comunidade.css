@@ -1,0 +1,70 @@
+.communityAlign {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.postComunidade {
+    border: 5px solid black;
+    margin: 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.postComunidade:hover {
+    background-color: #8f7838;
+    color: black;
+    transition: 0.5s;
+}
+
+.nomeComunidade, .tituloComunidade {
+    display: flex;
+    justify-content: start;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.descricaoComunidade {
+    margin: 0 25px;
+    border-left: 3px solid var(--purpleHover);
+}
+
+.acoesComunidade {
+    display: flex;
+    margin-left: 25px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.acoesComunidade > img {
+    padding: 2px;
+    transition: 0.5s;
+}
+
+.imgComunidade:hover {
+    background-color: #5d4e25;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+
+.addPost {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addPost h2 {
+    color: black;
+    padding: 5px;
+    border: 4px solid black;
+    font-size: 23px;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.addPost h2:hover {
+    background-color: #8f7838;
+    transition: 0.5s;
+}
