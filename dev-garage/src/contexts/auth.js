@@ -86,7 +86,7 @@ function AuthProvider({ children }){
           storageUser(data);
           setLoadingAuth(false);
           toast.success("Seja bem-vindo ao sistema!")
-          navigate("/dashboard")
+          navigate("/home")
           
         })
 
